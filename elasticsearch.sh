@@ -9,8 +9,8 @@ sudo apt-get update
 sudo apt install elasticsearch -y
 
 # start on boot
-sudo /bin/systemctl daemon-reload
-sudo /bin/systemctl enable elasticsearch.service
+sudo systemctl daemon-reload
+sudo systemctl enable elasticsearch.service
 
 # replace config file
 sudo mv /tmp/elasticsearch.yml /etc/elasticsearch/
